@@ -1,0 +1,76 @@
+<section class=" section-padding pt-0" style="padding-top: 250px  !important;">
+    <div class="container">
+        <div class="belly-product belly-product--details product-details--left-thumbnail">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="product__image">
+                        <div class="product-image-main">
+                            <img id="zoom_03" src="./assets/image/products/single-product/single-product-big-1.jpg"
+                                data-zoom-image="./assets/image/products/single-product/single-product-big-1.jpg" />
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-7">
+
+                    <div class="product-description" *ngIf="obje">
+                        <h3 class="">{{obje.nombre}}</h3>
+                        <div class="rating-widget">
+                            <span class="single-rating"><i class="ion-md-star"></i></span>
+                            <span class="single-rating"><i class="ion-md-star"></i></span>
+                            <span class="single-rating"><i class="ion-md-star"></i></span>
+                            <span class="single-rating"><i class="ion-md-star-half"></i></span>
+                            <span class="single-rating"><i class="ion-md-star-outline"></i></span>
+                            <span>
+                                <span class="rating-text"><a href="#"> 1 reviews </a> / <a href="#">Write a review</a></span>
+                            </span>
+                        </div>
+                        <div class="product__price">
+                            <span class="price--new">${{obje.precio}}</span>
+                        </div>
+                        <div class="product-description--list">
+                            <br>
+                            <p>Ex Tax: $320.00</p>
+                            <p>Reward Points: %s 400</p>
+                            <br>
+                            <p>Brands <a href="#" class="brand-tag text-primary">Hewlett-Packard</a></p>
+                            <p>Product Code: <span class="text-primary">3</span> </p>
+                            <p>Reward Points: <span class="text-primary">300</span></p>
+                            <p>Availability: <span class="text-primary">In Stock</span></p>
+                        </div>
+                        <div class="product-description--breif">
+                            <p>
+                                {{obje.descripcion}} 
+                            </p>
+                        </div>
+                        <div class="product-buttons--group ">
+                            <div class="single-btn-block count-input-block">
+                                <input type="number" class="form-control text-center" [(value)]="obje.cantidad">
+                                <div class="count-input-btns">
+                                    <button (click)="addCart(obje)" class="inc-ammount count-btn">+</button>
+                                    <button class="dec-ammount count-btn">-</button>
+                                </div>
+                            </div>
+                            <div class="single-btn-block">
+                                <a  class="theme-btn-outlined">Add to wishlist</a>
+                            </div>
+                            <div class="single-btn-block">
+                                <a  class="theme-btn-outlined">Add to Compare</a>
+                            </div>
+
+                            <div class="single-btn-block w-100">
+                                <ul class="social-btns">
+                                    <li><a href="#" class="facebook"><i class="far fa-thumbs-up"></i><span>likes 1</span></a></li>
+                                    <li><a href="#" class="twitter"><i class="fab fa-twitter"></i> <span>twitter</span></a></li>
+                                    <li><a href="#" class="google"><i class="fas fa-plus-square"></i> <span>share</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<app-review></app-review>

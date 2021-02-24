@@ -1,0 +1,48 @@
+[{
+    "idi": 1,
+    "nombre" : "Producto1",
+    "descripcion"  : " Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; ",
+    "img": "https://wongfood.vteximg.com.br/arquivos/ids/160130-1000-1000/Vino-Tinto-Santiago-Queirolo-Magdalena-Pack-2-Unid-x-750-ml-444732.jpg?v=636104932924800000",
+    "precio" : 100,
+    "cantidad": 1
+},
+{
+    "idi": 2,
+    "nombre" : "Producto2",
+    "descripcion"  : " Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; ",
+    "img": "https://wongfood.vteximg.com.br/arquivos/ids/160130-1000-1000/Vino-Tinto-Santiago-Queirolo-Magdalena-Pack-2-Unid-x-750-ml-444732.jpg?v=636104932924800000",
+    "precio" : 150,
+    "cantidad": 1
+},
+{
+    "idi": 3,
+    "nombre" : "Producto3",
+    "descripcion"  : " Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; ",
+    "img": "https://wongfood.vteximg.com.br/arquivos/ids/160130-1000-1000/Vino-Tinto-Santiago-Queirolo-Magdalena-Pack-2-Unid-x-750-ml-444732.jpg?v=636104932924800000",
+    "precio" : 140,
+    "cantidad": 1
+},
+{
+    "idi": 4,
+    "nombre" : "Producto4",
+    "descripcion"  : " Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; ",
+    "img": "https://wongfood.vteximg.com.br/arquivos/ids/160130-1000-1000/Vino-Tinto-Santiago-Queirolo-Magdalena-Pack-2-Unid-x-750-ml-444732.jpg?v=636104932924800000",
+    "precio" : 130,
+    "cantidad": 1
+},
+{
+    "idi": 5,
+    "nombre" : "Producto5",
+    "descripcion"  : " Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; ",
+    "img": "https://wongfood.vteximg.com.br/arquivos/ids/160130-1000-1000/Vino-Tinto-Santiago-Queirolo-Magdalena-Pack-2-Unid-x-750-ml-444732.jpg?v=636104932924800000",
+    "precio" : 120,
+    "cantidad": 1
+},
+{
+    "idi": 6,
+    "nombre" : "Producto6",
+    "descripcion"  : " Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; ",
+    "img": "https://wongfood.vteximg.com.br/arquivos/ids/160130-1000-1000/Vino-Tinto-Santiago-Queirolo-Magdalena-Pack-2-Unid-x-750-ml-444732.jpg?v=636104932924800000",
+    "precio" : 160,
+    "cantidad": 1
+}]

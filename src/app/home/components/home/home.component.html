@@ -1,0 +1,122 @@
+<app-banner></app-banner>
+<app-welcome></app-welcome>
+
+<section class="product-section section-padding">
+        <div class="container">
+            <div class="section-title section-title-sep-3 text-black">
+                <h2>Recent Product</h2>
+                <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram anteposuerit litterarum.</p>
+            </div>
+            <div class="product-slider mini-items-slider" *ngIf="existeInfo">
+                <div *ngFor="let dato of myData" class="product__single-slide">
+                    <div class="belly-product product-style-2">
+                        <div class="product__image">
+                            <img src="./assets/image/products/home-4/product-2.jpg" alt="">
+                            <div class="hover-content">
+                                <a href="product-details-light.html" class="hover-image">
+                                    <img src="./assets/image/products/home-4/product-1.jpg" alt="">
+                                </a>
+                                <div class="hover-btns btn-type-2">
+                                    <a href="wishlist-light.html" class="single-btn"><i class="ion-md-heart-empty"></i></a>
+                                    <a href="compare-light.html" class="single-btn"><i class="ion-md-options"></i></a>
+                                    <a [routerLink]="['../product-detail',dato.idi]" class="single-btn" role="button" class="btn btn-primary" data-toggle="modal" data-target="#quick-view"><i class="ion-md-open"></i></a>
+                                </div>
+                            </div>
+                            <span class="product-badge badge--sell-chocolate"></span>
+                        </div>
+                        <div class="product-description text-center">
+                            <h3 class="product__caption">
+                                <a href="product-details-light.html">{{dato.nombre}}</a>
+                            </h3>
+                            <div class="rating-widget">
+                                <span class="single-rating"><i class="ion-md-star"></i></span>
+                                <span class="single-rating"><i class="ion-md-star"></i></span>
+                                <span class="single-rating"><i class="ion-md-star"></i></span>
+                                <span class="single-rating"><i class="ion-md-star-half"></i></span>
+                                <span class="single-rating"><i class="ion-md-star-outline"></i></span>
+                            </div>
+                            <div class="product__price">
+                                <span class="price--old">${{dato.precio}}</span>
+                                <span class="price--new">${{dato.precio}}</span>
+                            </div>   
+                            <div class="product__btn">
+                               <a (click)="addCart(dato)" class="theme-btn-outlined theme-btn-outlined--type-2">add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+</section>
+
+<div class="dicover-area">
+        <div class="banner-content-wrapper banner-2 home-4--banner">
+            <div class="banner-content bg-image text-white" data-bgimage="./assets/image/bg-images/home-4/welcome-bg.png">
+                <div class="container">
+                    <div class="row justify-content-center text-center">
+                        <div class="col-lg-8">
+                            <h3 class="title--sm">MAKING PEOPLE HAPPY</h3>
+                            <h1 class="title--lg title-seperator--1 title-xl-arvo--bold">Love & Coffee Sale 20%</h1>
+                            <p >Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per <br> seacula quarta decima et quinta decima.</p>  
+                            <div class="banner_btn">
+                                <a href="shop-grid--fullwidth-three-light..html" class="theme-btn-outlined--primary">Discover Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+    
+<section class=" home-4__product--new section-padding space-db--30">
+        <div class="container">
+            <div class="section-title section-title-sep-3 text-black">
+                <h2>Recent Product</h2>
+                <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram anteposuerit litterarum.</p>
+            </div>
+            <div class="product-slider mini-items-slider" *ngIf="existeInfo">
+                <div *ngFor="let dato of myData" class="product__single-slide">
+                    <div class="belly-product product-style-2">
+                        <div class="product__image">
+                            <img src="./assets/image/products/home-4/product-2.jpg" alt="">
+                            <div class="hover-content">
+                                <a href="product-details-light.html" class="hover-image">
+                                    <img src="./assets/image/products/home-4/product-1.jpg" alt="">
+                                </a>
+                                <div class="hover-btns btn-type-2">
+                                    <a href="wishlist-light.html" class="single-btn"><i class="ion-md-heart-empty"></i></a>
+                                    <a href="compare-light.html" class="single-btn"><i class="ion-md-options"></i></a>
+                                    <a [routerLink]="['../product-detail',dato.idi]" class="single-btn" role="button" class="btn btn-primary" data-toggle="modal" data-target="#quick-view"><i class="ion-md-open"></i></a>
+                                </div>
+                            </div>
+                            <span class="product-badge badge--sell-chocolate"></span>
+                        </div>
+                        <div class="product-description text-center">
+                            <h3 class="product__caption">
+                                <a href="product-details-light.html">{{dato.nombre}}</a>
+                            </h3>
+                            <div class="rating-widget">
+                                <span class="single-rating"><i class="ion-md-star"></i></span>
+                                <span class="single-rating"><i class="ion-md-star"></i></span>
+                                <span class="single-rating"><i class="ion-md-star"></i></span>
+                                <span class="single-rating"><i class="ion-md-star-half"></i></span>
+                                <span class="single-rating"><i class="ion-md-star-outline"></i></span>
+                            </div>
+                            <div class="product__price">
+                                <span class="price--old">${{dato.precio}}</span>
+                                <span class="price--new">${{dato.precio}}</span>
+                            </div>   
+                            <div class="product__btn">
+                               <a (click)="addCart(dato)" class="theme-btn-outlined theme-btn-outlined--type-2">add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+</section>
+
+<app-testimonial></app-testimonial>
+<app-blog></app-blog>

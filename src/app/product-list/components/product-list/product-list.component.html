@@ -1,0 +1,61 @@
+<div class="belly-bredcrumb-section" style="padding-top: 150px !important;" >
+    <div class="container">
+        <ul class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Shop</a></li>
+        </ul>
+    </div>
+</div>
+<section class="section-padding pt-0">
+    <div class="container">
+        <div class="shop-toolbar mb-30">
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-md-6 col-5">
+                    <!-- Product View Mode -->
+                    <div class="product-view-mode">
+                        <a class="sortting-btn" href="#" data-target="list"><i class="fas fa-list"></i></a>
+                        <a href="#" data-target="grid" class="sortting-btn  active"><i class="fas fa-th"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-3 col-md-6 col-7">
+                    <div class="sorting-selection row">
+                        <select id="input-sort" class="form-control col-lg-6 col-6">
+                            <option value="" selected="selected">Sort By:Default</option>
+                            <option value="">Sort
+                                By:Name (A - Z)</option>
+                            <option value="">Sort
+                                By:Name (Z - A)</option>
+                            <option value="">Sort
+                                By:Price (Low &gt; High)</option>
+                            <option value="">Sort
+                                By:Price (High &gt; Low)</option>
+                            <option value="">Sort
+                                By:Rating (Highest)</option>
+                            <option value="">Sort
+                                By:Rating (Lowest)</option>
+                            <option value="">Sort
+                                By:Model (A - Z)</option>
+                            <option value="">Sort
+                                By:Model (Z - A)</option>
+                        </select>
+                        <select id="input-limit" class="form-control col-lg-4 offset-lg-2 col-6">
+                            <option value="" selected="selected">Show:9</option>
+                            <option value="">Show:25</option>
+                            <option value="">Show:50</option>
+                            <option value="">Show:75</option>
+                            <option value="">Show:100</option>
+                        </select>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="shop-product-wrap grid with-pagination row">
+            
+            <app-card class="col-lg-4 col-sm-6 mb-30" [objeto]="obj" *ngFor="let obj of myData"></app-card>
+
+        </div>
+        <div class="pagination-widget">
+</div>
+    </div>
+</section>

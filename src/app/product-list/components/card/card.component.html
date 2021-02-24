@@ -1,0 +1,44 @@
+<div >
+    <div class="belly-product product-style-2">
+        <div class="product__image">
+            <img src="{{objeto.img}}" alt="">
+            <div class="hover-content">
+                <a [routerLink]="['../product-detail', objeto.idi]" class="hover-image">
+                    <img src="{{objeto.img}}" alt="">
+                </a>
+                <div class="hover-btns">
+                    <a  class="single-btn"><i class="ion-md-heart-empty"></i></a>
+                    <a  class="single-btn"><i class="ion-md-options"></i></a>
+                    <a [routerLink]="['../product-detail', objeto.idi]" class="single-btn" role="button" class="btn btn-primary" data-toggle="modal" data-target="#quick-view"><i class="ion-md-open"></i></a>
+                </div>
+            </div>
+            <span class="product-badge badge--sell-green"></span>
+        </div>
+
+        <div class="product-contents">
+            <h3 class="product__caption">
+                <a href="product-details-light.html">{{objeto.nombre}}</a>
+            </h3>
+            <div class="rating-widget">
+                <span class="single-rating"><i class="ion-md-star"></i></span>
+                <span class="single-rating"><i class="ion-md-star"></i></span>
+                <span class="single-rating"><i class="ion-md-star"></i></span>
+                <span class="single-rating"><i class="ion-md-star-half"></i></span>
+                <span class="single-rating"><i class="ion-md-star-outline"></i></span>
+            </div>
+
+            <div class="product__price">
+                <span class="price--old">$150</span>
+                <span class="price--new">$150</span>
+            </div>
+            <p class="product-info-para">
+                {{objeto.descripcion}}
+            </p>
+            <div class="product__btn">
+                <a  (click)="addCart(objeto)" class="theme-btn-outlined--type-2">add to cart</a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
